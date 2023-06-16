@@ -1,0 +1,25 @@
+<p>tutorial works!</p>
+<style>
+    table,tr,th {border: 1px solid black;}
+    table{height: 250px; width: 450px; text-align: center;}
+</style>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Topic</th>
+        <th>Descipton</th>
+        
+    </tr>
+
+    <tr *ngFor="let pr of classlist">
+        <th>{{pr.id}}</th>
+        <th>{{pr.title}}</th>
+        <th>{{pr.desc}}</th>
+        
+
+    </tr>
+</table>
+
+
+<a class="btn btn-primary" routerLink="/add_t">Add New Product</a>
