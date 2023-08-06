@@ -1,18 +1,19 @@
-<p>add-t works!</p>
 
 
-<div style="background-color:rgb(111, 217, 111);">
+
+<div style="background-color:aliceblue">
     <div style=" height: 500px;  width:550px; background-color: burlywood; margin-left:350px;" >
-    
+    <br>
         <h2 style="color: red; text-align: center;">Add New Product</h2>
     <form [formGroup]="prform" (ngSubmit)="savepr(); prform.reset();" style="padding-top:30px; margin-left:150px;">
     
-        <input type="number" formControlName="id" placeholder="enter id"><br><br>
-        <input type="text" formControlName="title" placeholder="enter topic name"><br><br>
-        <input type="text" formControlName="desc" placeholder="enter topic description"><br><br>
-
-        <button type="submit">save class</button>
-    
+        <!-- <input type="number" formControlName="id" placeholder="enter id"><br><br> -->
+        <input style="height: 20px; width:300px;" type="text" formControlName="title" placeholder="Enter book name"><br><br>
+        <input style="height: 20px; width:300px;" type="text" formControlName="desc" placeholder="summary"><br><br>
+        <input type="file" name="img" placeholder="Choose file">
+        <div>
+        <button style="height: 30px; width:100px; margin-top: 20px;" type="submit">save book</button>
+    </div>
     
     
     

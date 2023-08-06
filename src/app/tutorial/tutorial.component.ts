@@ -24,6 +24,24 @@ export class TutorialComponent implements OnInit {
     )
   }
 
+  delflag:any
+
+  delId(id:any)
+  {
+console.log(id)
+this.tuto.delProd(id).subscribe((data)=>{console.log(data);
+  this.delflag=data;
+  this.route.navigate(['/tutoial'])
+})
+  }
+
+
+
+onedit(id:any)
+{
+  this.route.navigate(['/up-lect',id])
+}
+
 
 
 }

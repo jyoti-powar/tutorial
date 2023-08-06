@@ -3,9 +3,10 @@ const mongoose = require('mongoose')
 const wpSchema = new mongoose.Schema(
     {
         _id:mongoose.Schema.Types.ObjectId,
-        id:Number,
+        // id:Number,
         title:String,
         desc:String,
+        img:String
         
     }
 )

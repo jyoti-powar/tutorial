@@ -1,0 +1,18 @@
+
+
+<div style="background-color:aliceblue">
+    <div style=" height: 500px;  width:550px; background-color: burlywood; margin-left:350px;" >
+    <br>
+        <h2 style="color: red; text-align: center;">Update Book Details</h2>
+    <form [formGroup]="prform" (ngSubmit)="updateprod()" style="padding-top:30px; margin-left:150px;">
+    
+        <!-- <input type="number" formControlName="id" placeholder="enter id"><br><br> -->
+        <input style="height: 20px; width:300px;" type="text" formControlName="title" placeholder="Enter book name"><br><br>
+        <input style="height: 20px; width:300px;" type="text" formControlName="desc" placeholder="Enter summary "><br><br>
+        <button style="height: 40px; width:150px;" type="submit">Update Books</button>
+    
+    
+    
+    
+    </form>
+    </div></div>

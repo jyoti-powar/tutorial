@@ -1,25 +1,32 @@
-<p>tutorial works!</p>
+
 <style>
     table,tr,th {border: 1px solid black;}
     table{height: 250px; width: 450px; text-align: center;}
 </style>
-
-<table>
+<div>
+<table style="margin: 50px; width: 80%;">
     <tr>
-        <th>Id</th>
+        <!-- <th>Id</th> -->
         <th>Topic</th>
-        <th>Descipton</th>
+        <th>Summary</th>
+        <th>Image</th>
+        <th>Update</th>
+        <th>Delete</th>
         
     </tr>
 
     <tr *ngFor="let pr of classlist">
-        <th>{{pr.id}}</th>
-        <th>{{pr.title}}</th>
-        <th>{{pr.desc}}</th>
+        <!-- <th>{{pr.id}}</th> -->
+        <th>{{pr.title|titlecase}}</th>
+        <th>{{pr.desc|titlecase}}</th>
+        <th><img [src]="pr.img" alt="" width="100px" height="100px"></th>
+        <th><button class="btn btn-warning btn-sm" (click)="onedit(pr._id)">Edit</button></th>
+        <th><button class="btn btn-danger btn-sm" (click)="delId(pr._id)">Delete</button></th>
+       
         
 
     </tr>
 </table>
-
-
+</div>
+<br>
 <a class="btn btn-primary" routerLink="/add_t">Add New Product</a>

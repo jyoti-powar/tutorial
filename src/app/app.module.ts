@@ -9,12 +9,16 @@ import{ HttpClientModule} from'@angular/common/http';
 import { AppComponent } from './app.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { AddTComponent } from './add-t/add-t.component';
+import { UpLecComponent } from './up-lec/up-lec.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TutorialComponent,
-    AddTComponent
+    AddTComponent,
+    UpLecComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
